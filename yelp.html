@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Name : Samuel Benison Jeyaraj Victor -->
+<!-- Email ID : sambenison66@gmail.com -->
+<!-- Project Link : http://omega.uta.edu/~xxx1234/project3/yelp.html -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Best Restaurants on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=YourKeyHere&sensor=false"></script>
+    <script type="text/javascript" src="yelp.js"></script>
+    <style>
+      div#outputMap{
+        height:500px;
+        width:600px;
+      }
+    </style>
+  </head>
+  <body onload="YelpApp();">
+    <form>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="YelpApp.sendRequest();" value="Find"/>
+    </form>
+    <div id="outputMap"></div>
+    <div id="output"></div>
+  </body>
+</html>
